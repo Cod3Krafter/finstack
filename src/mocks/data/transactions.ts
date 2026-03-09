@@ -1,0 +1,43 @@
+import type { Transaction } from "@/types/transaction";
+
+export const mockTransactions: Transaction[] = [
+  {
+    id: "txn_001",
+    reference: "FST20240301001",
+    type: "credit",
+    category: "salary",
+    amount: 450000,
+    currency: "NGN",
+    description: "Monthly Salary - March",
+    counterparty: "SystemTech Services Ltd",
+    balanceAfter: 2450000,
+    createdAt: "2024-03-01T08:00:00Z",
+    status: "successful",
+  },
+  {
+    id: "txn_002",
+    reference: "FST20240302001",
+    type: "debit",
+    category: "bills",
+    amount: 15000,
+    currency: "NGN",
+    description: "DSTV Subscription",
+    counterparty: "Multichoice Nigeria",
+    balanceAfter: 2435000,
+    createdAt: "2024-03-02T10:30:00Z",
+    status: "successful",
+  },
+  {
+    id: "txn_003",
+    reference: "FST20240303001",
+    type: "debit",
+    category: "transfer",
+    amount: 50000,
+    currency: "NGN",
+    description: "Rent contribution",
+    counterparty: "Chukwuemeka Obi",
+    balanceAfter: 2385000,
+    createdAt: "2024-03-03T14:00:00Z",
+    status: "successful",
+  },
+];
